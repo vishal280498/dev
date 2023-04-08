@@ -1,0 +1,18 @@
+/* button css */
+.global-btn {
+  width: 100%;
+  background: linear-gradient(
+    165.69deg,
+    rgba(104, 108, 248, 0.7) 4.49%,
+    rgba(236, 171, 241, 0.7) 113.71%
+  );
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--white-color);
+  cursor: pointer;
+}
