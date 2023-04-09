@@ -1,39 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GradientButton from '../../components/GradientButton/GradientButton';
 import SocialButton from '../../components/SocialButton';
+import GradientButton from '../../components/GradientButton/GradientButton';
 import CountryInput from '../../components/CountryInput';
+import './Signup.css';
 
-import logo from '../../images/logo.svg';
-import layerimg from '../../images/login-banner.png';
-
-import './Login.css';
-
-export default function Login() {
+export default function Signup() {
   return (
-    <div className="login-section">
-      <div className='login-inner'>
+    <div className="signup-section">
+      <div className='sign-inner'>
         <div className="container">
-          <div className="login-row">
-            <div className="col-left">
-              <div className="logo-text">
-                <img src={logo} alt="logo" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nulla eget adipiscing faucibus platea. Eu ultrices ipsum
-                </p>
-              </div>
-              <div className="img-block">
-                <img src={layerimg} alt="layer-img" />
-              </div>
-            </div>
-            <div className="col-right">
-              <div className="login-from">
-                <div className="login-block">
+          <div className="sign-row">
+
+            <div className="col-main">
+              <div className="sign-from">
+                <div className="sign-block">
                   <div className="title">
-                    <h2>Get Started !</h2>
-                    <span>New to Company? <Link to={'/signup'}>Sign up</Link></span>
+                    <h2>Create store in 10mins</h2>
+                    <span>Already have a account? <Link to={'/'}>Sign In</Link></span>
                   </div>
                   <form>
+                    <div className="half-row">
+                      <div className="form-group">
+                        <label>First Name</label>
+                        <input type='number' className="form-control" placeholder="Your First Name" />
+                      </div>
+                      <div className="form-group">
+                        <label>Last Name</label>
+                        <input type='number' className="form-control" placeholder="Your Last Name" />
+                      </div>
+                    </div>
                     <div className="form-group">
                       <label>Enter Mobile Number</label>
                       <div className="flag-style">
@@ -49,7 +45,7 @@ export default function Login() {
                     </div>
 
                     <div className="form-group">
-                      <GradientButton text="Login" />
+                      <GradientButton text="Signup" />
                     </div>
                     <div className="sign-text">
                       <p>Or sign in with</p>
@@ -67,5 +63,6 @@ export default function Login() {
         </div>
       </div>
     </div>
-  );
+  )
+    ;
 }
