@@ -5,7 +5,7 @@ import GradientButton from '../../components/GradientButton/GradientButton';
 import chevron from '../../images/chevron-left.svg';
 import logo from '../../images/logo.svg';
 import icon from '../../images/Icon.svg';
-import store from '../../images/store-section.jpg';
+import store from '../../images/image-placeholder.png';
 
 export default function StoreSecond() {
   return (

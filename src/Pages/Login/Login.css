@@ -3,15 +3,11 @@
 } */
 .login-section {
     background: linear-gradient(90deg, rgb(0 0 0) 35%, rgb(33 26 56) 100%);
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
 }
 
 .login-section .container {
-    height: 100%;
-}
-
-.login-section .login-inner {
     height: 100%;
 }
 
@@ -23,11 +19,10 @@
 }
 
 .login-row .col-left {
-    width: 60%;
+    flex: 1;
 }
 
 .login-row .col-right {
-    width: 40%;
     max-width: 570px;
     padding-bottom: 30px;
 }
@@ -38,6 +33,7 @@
 
 .login-row .col-left .img-block img {
     width: 100%;
+    margin-left: -200px;
 }
 
 .login-row .col-left .logo-text p {
@@ -174,6 +170,6 @@
 
 @media (max-height: 850px) {
     .login-row {
-        align-items: flex-start;
+        height: initial;
     }
 }

@@ -4,7 +4,7 @@ import GradientButton from '../../components/GradientButton/GradientButton';
 
 import logo from '../../images/logo.svg';
 import chevron from '../../images/chevron-left.svg';
-import store from '../../images/store-section.jpg';
+import store from '../../images/image-placeholder.png';
 
 import './Store.css'
 
